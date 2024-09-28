@@ -1,46 +1,46 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Webpage Example</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	<!-- Header with ARIA role -->
+
+    <!-- Header with ARIA role -->
     <header role="banner">
-        <h1>Welcome to My Website</h1>
+        <h1 role="heading" aria-level="1">Welcome to My Website</h1>
     </header>
 
     <!-- Navigation bar with ARIA role -->
     <nav role="navigation">
-        <ul>
-            <li><a href="#home" aria-label="Home">Home</a></li>
-            <li><a href="#about" aria-label="About Us">About Us</a></li>
-            <li><a href="#services" aria-label="Services">Services</a></li>
-            <li><a href="#contact" aria-label="Contact">Contact</a></li>
+        <ul role="list">
+            <li role="listitem"><a href="#home" aria-label="Home">Home</a></li>
+            <li role="listitem"><a href="#about" aria-label="About Us">About Us</a></li>
+            <li role="listitem"><a href="#services" aria-label="Services">Services</a></li>
+            <li role="listitem"><a href="#contact" aria-label="Contact">Contact</a></li>
         </ul>
     </nav>
 
     <!-- Main content area with ARIA role -->
     <main role="main">
         <!-- Image with alt attribute -->
-        <img src="https://png.pngtree.com/thumb_back/fh260/background/20230408/pngtree-robot-white-cute-robot-blue-light-background-image_2199825.jpg" alt="A beautiful landscape of mountains and trees" />
+        <img src="landscape.jpg" alt="A beautiful landscape of mountains and trees" role="img" />
 
         <!-- Brief description -->
         <section role="region">
-            <h2>About This Website</h2>
+            <h2 role="heading" aria-level="2">About This Website</h2>
             <p>This website is designed to showcase the use of ARIA roles and provide an accessible experience for all users.</p>
         </section>
 
         <!-- List with ARIA role -->
         <section role="region">
-            <h3>Our Features</h3>
+            <h3 role="heading" aria-level="3">Our Features</h3>
             <ul role="list">
-                <li>Fully responsive design</li>
-                <li>Accessible navigation</li>
-                <li>Engaging content for all users</li>
+                <li role="listitem">Fully responsive design</li>
+                <li role="listitem">Accessible navigation</li>
+                <li role="listitem">Engaging content for all users</li>
             </ul>
         </section>
     </main>
@@ -49,9 +49,6 @@
     <footer role="contentinfo">
         <p>Copyright © 2024 My Website. All rights reserved.</p>
     </footer>
-    <script type="text/javascript" src="./script.js">
-</script>
 
 </body>
-
 </html>
